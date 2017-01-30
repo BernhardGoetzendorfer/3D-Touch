@@ -6,9 +6,9 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemType</key>
-			<string>two</string>
+			<string>three</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Two</string>
+			<string>Three</string>
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypePause</string>
 		</dict>
@@ -16,9 +16,9 @@
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypePlay</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>One</string>
+			<string>Two</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>one</string>
+			<string>two</string>
 		</dict>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

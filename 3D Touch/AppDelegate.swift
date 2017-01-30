@@ -46,13 +46,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void)
     {
         print("Hey, Quick action clicked")
-        if shortcutItem.type == "one"
+        if shortcutItem.type == "two"
         {
-            print("Hey One!")
+            
+            
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "two") as UIViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
+            
+            
+            
         }
-        else if shortcutItem.type == "two"
+        else if shortcutItem.type == "three"
         {
-            print("Hey Two!")
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "three") as UIViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
         }
     }
 
