@@ -42,5 +42,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    //Wird IMMER ausgeführt, wenn der User auf einen Shortcut(Quick Action) klickt.
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void)
+    {
+        print("Hey, Quick action clicked")
+        if shortcutItem.type == "one"
+        {
+            print("Hey One!")
+        }
+        else if shortcutItem.type == "two"
+        {
+            print("Hey Two!")
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
